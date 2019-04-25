@@ -1,37 +1,34 @@
 const LanguageSwitch = () => (state, actions) => {
-  let { languages = [], url, hash } = state
+  let { languages = [], url, hash, root } = state
   // no languages, no menu
   if (!languages.length) {
     return
   }
 
-  const lang = state.language || state.url.split('/')[1]
-  let language = languages.find(l => lang === l.lang)
-  if (!language) {
-    language = languages[0]
-    actions.changeLanguage(language.lang)
+  url = url.replace(root, '/').replace(/\/\/+/g, '/')
+
+  const urlArr = url.split('/').filter(a => a)
+  const urlLang = urlArr[0]
+  const lang = languages.find(l => l.code === urlLang) || languages[0] || { code: state.language }
+  const language = lang.code
+
+  if (language && language !== state.language) {
+    actions.changeLanguage(language)
   }
 
   return ul(
     { class: 'LanguageSwitch' },
-    languages.map(l => {
-      if (l.lang === language.lang) {
+    languages.map(({ to = '', text, code }) => {
+      if (code === language) {
         return
       }
 
-      if (url.startsWith(`/${language.lang}/`)) {
-        url = url.replace(`/${language.lang}/`, '')
-      }
+      url = url.replace(`/${language}/`, '/')
 
-      let { to = '', text } = l
       const h = hash ? `#${hash}` : ''
-      to = (to + url + h).replace(/\/\//g, '/')
+      to = (to + url + h).replace(/\/\/+/g, '/')
 
-      if (url === to) {
-        return
-      }
-
-      return li([Link({ to, onclick: () => actions.changeLanguage(l.lang) }, text)])
+      return li([Link({ to, onclick: () => actions.changeLanguage(code) }, text)])
     }),
   )
 }
