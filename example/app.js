@@ -3,8 +3,8 @@ module.exports = {
     logo: '/img/logo.png',
     logotext: 'pre',
     languages: [
-      { lang: 'en', to: '/', text: 'english' },
-      { lang: 'de', to: '/de/', text: 'german' },
+      { code: 'en', to: '/', text: 'english' },
+      { code: 'de', to: '/de/', text: 'deutsch' },
     ],
     menu: [
       { to: '/#installation', text: 'installation' },

@@ -1,5 +1,8 @@
-module.exports = {
-  View: () =>
+const state = {
+  lang: 'de',
+}
+
+const View = () =>
     div([
       LanguageSwitch,
       h1('@magic-modules/languageswitch'),
@@ -48,5 +51,9 @@ module.exports = {
         Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
         ' gebaut und zu github publiziert.',
       ]),
-    ]),
+    ])
+
+module.exports = {
+  state,
+  View,
 }

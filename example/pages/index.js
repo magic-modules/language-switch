@@ -55,8 +55,8 @@ module.exports = {
     // ... other app state
     languages: [
       // the first language is the default fallback
-      { lang: 'en', to: '/', text: 'english' },
-      { lang: 'de', to: '/de/', text: 'deutsch' },
+      { code: 'en', to: '/', text: 'english' },
+      { code: 'de', to: '/de/', text: 'deutsch' },
     ],
   },
 }
