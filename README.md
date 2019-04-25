@@ -1,5 +1,5 @@
 ## @magic-modules/languageswitch
-this is the [@magic-modules]https://github.com/magic-modules)
+this is the [@magic-modules](https://github.com/magic-modules)
 LanguageSwitch component. It provides a dynamic language switch menu
 
 it redirects your current page to any of the other language versions that exist,
