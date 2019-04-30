@@ -1,5 +1,5 @@
 ## @magic-modules/languageswitch
-this is the [@magic-modules](https://github.com/magic-modules)
+this is the [@magic-modules](https://github.com/magic-modules/)
 LanguageSwitch component. It provides a dynamic language switch menu
 
 it redirects your current page to any of the other language versions that exist,
@@ -7,7 +7,7 @@ but **assumes that there are alternatives for every language.**
 
 it also handles hashes # in urls correctly.
 
-[html docs](https://magic.github.io/magic-modules/languageswitch)
+[html docs](https://magic-modules.github.io/languageswitch/)
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
