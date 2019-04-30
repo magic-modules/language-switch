@@ -6,9 +6,9 @@ module.exports = {
       { code: 'de', to: '/de/', text: 'deutsch' },
     ],
     menu: [
-      { to: '/#installation', text: 'installation:' },
-      { to: '/#require', text: 'require:' },
-      { to: '/#usage', text: 'usage:' },
+      { to: '/#installation', text: 'installation' },
+      { to: '/#require', text: 'require' },
+      { to: '/#usage', text: 'usage' },
       { to: '/#pages', text: 'language pages' },
       { to: '/#state', text: 'required state' },
       { to: '/#source', text: 'source' },
