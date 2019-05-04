@@ -1,7 +1,10 @@
 {
-  "name": "@magic-modules/languageswitch",
+  "name": "@magic-modules/language-switch",
   "version": "0.0.1",
   "author": "Wizards & Witches",
+  "description": "@magic-modules LanguageSwitch. adds an intelligent language switching mechanism to your @magic app.",
+  "homepage": "https://github.com/magic-modules/language-switch#readme",
+  "license": "AGPL-3.0",
   "main": "src/index.js",
   "files": [
     "src"
@@ -17,21 +20,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magic-modules/languageswitch.git"
+    "url": "git+https://github.com/magic-modules/language-switch.git"
   },
   "bugs": {
-    "url": "https://github.com/magic-modules/languageswitch/issues"
+    "url": "https://github.com/magic-modules/language-switch/issues"
   },
-  "homepage": "https://github.com/magic-modules/languageswitch#readme",
   "devDependencies": {
-    "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
+    "@magic-modules/git-badges": "github:magic-modules/git-badges",
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
     "@magic/test": "0.0.12"
   },
-  "license": "AGPL-3.0",
-  "description": "@magic-modules LanguageSwitch. adds an intelligent language switching mechanism to your @magic app",
   "keywords": [
     "magic",
     "language"
