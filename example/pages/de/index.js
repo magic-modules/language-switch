@@ -19,13 +19,13 @@ const page = () => [
   ]),
   p('das fehlende @ vor magic-modules ist, wie wir npm module von github installieren können.'),
 
-  Pre.View(`
+  Pre(`
 npm install magic-modules/languageswitch
 `),
 
   h2({ id: 'require' }, 'importieren'),
   p('zuerst laden wir das modul via /assets/index.js'),
-  Pre.View(`
+  Pre(`
 // assets/index.js
 module.exports = {
   //...other exports
@@ -33,7 +33,7 @@ module.exports = {
 }`),
   h2({ id: 'usage' }, 'usage:'),
   p('in einer page oder einem komponent'),
-  Pre.View("module.exports = {\n  View: () => div({ class: 'page' }, LanguageSwitch)\n}"),
+  Pre("module.exports = {\n  View: () => div({ class: 'page' }, LanguageSwitch)\n}"),
 
   h2({ id: 'source' }, 'source'),
   p([

@@ -19,13 +19,13 @@ module.exports = () => [
   p('note the missing @ before magic-modules.'),
   p('this is how we install npm modules from github.'),
 
-  Pre.View(`
+  Pre(`
 npm install magic-modules/languageswitch
 `),
 
   h2({ id: 'require' }, 'require:'),
   p('first add the component to the assets'),
-  Pre.View(`
+  Pre(`
 // assets/index.js
 module.exports = {
   //...other exports
@@ -33,11 +33,11 @@ module.exports = {
 }`),
   h2({ id: 'usage' }, 'usage:'),
   p('in a page or component'),
-  Pre.View('module.exports = {\n  View: () => LanguageSwitch,\n}'),
+  Pre('module.exports = {\n  View: () => LanguageSwitch,\n}'),
 
   h2({ id: 'pages' }, 'language pages'),
   p('create your languages in the pages directory, for example:'),
-  Pre.View(`
+  Pre(`
 /pages/
   index.js // english page
   /de/
@@ -46,7 +46,7 @@ module.exports = {
 
   h2({ id: 'state' }, 'required state'),
   p('LanguageSwitch needs to know about the languages in your app.'),
-  Pre.View(`
+  Pre(`
 // /assets/app.js
 module.exports = {
   state: {
