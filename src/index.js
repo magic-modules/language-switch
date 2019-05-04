@@ -1,7 +1,8 @@
 const LanguageSwitch = () => (state, actions) => {
   let { languages = [], url, hash, root } = state
+  CHECK_PROPS({ languages, url, hash, root }, LanguageSwitch.props, 'LanguageSwitch')
   // no languages, no menu
-  if (!languages.length) {
+  if (!languages.length || !root || !url) {
     return
   }
 
@@ -59,5 +60,12 @@ LanguageSwitch.global = {
     changeLanguage: true,
   },
 }
+
+LanguageSwitch.props = [
+  { key: 'languages', type: 'array', required: true },
+  { key: 'url', type: 'string', required: true },
+  { key: 'hash', type: 'string' },
+  { key: 'root', type: 'string' },
+]
 
 module.exports = LanguageSwitch
