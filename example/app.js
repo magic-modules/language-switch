@@ -12,7 +12,6 @@ module.exports = {
     ],
     menu: [
       { to: '/#installation', text: 'installation' },
-      { to: '/#require', text: 'require' },
       { to: '/#usage', text: 'usage' },
       { to: '/#pages', text: 'language pages' },
       { to: '/#state', text: 'required state' },

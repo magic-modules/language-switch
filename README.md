@@ -35,19 +35,6 @@ npm install --save-exact @magic-modules/languageswitch
 ```
 
 #### usage:
-
-##### import:
-```javascript
-// assets/index.js:
-
-
-module.exports = {
-  //... other entries
-  LanguageSwitch = require('@magic-modules/languageswitch'),
-}
-```
-
-##### use tag
 ```javascript
 // in any component view
 const component = {

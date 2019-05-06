@@ -23,14 +23,6 @@ module.exports = () => [
 npm install magic-modules/languageswitch
 `),
 
-  h2({ id: 'require' }, 'require:'),
-  p('first add the component to the assets'),
-  Pre(`
-// assets/index.js
-module.exports = {
-  //...other exports
-  LanguageSwitch: require('@magic-modules/languageswitch'),
-}`),
   h2({ id: 'usage' }, 'usage:'),
   p('in a page or component'),
   Pre('module.exports = {\n  View: () => LanguageSwitch,\n}'),
