@@ -1,6 +1,6 @@
 module.exports = {
   ROOT: 'example',
-  WEB_ROOT: '/languageswitch/',
+  WEB_ROOT: '/language-switch/',
   PUBLIC: 'docs',
   THEME: 'docs',
 }

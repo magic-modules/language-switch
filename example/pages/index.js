@@ -7,10 +7,7 @@ module.exports = () => [
     ' LanguageSwitch component. It provides a language switch menu.',
   ]),
 
-  GitBadges({
-    project: 'magic-modules/languageswitch',
-    appveyor: 'jaeh/languageswitch',
-  }),
+  GitBadges('magic-modules/language-switch'),
 
   h2({ id: 'installation' }, 'installation:'),
   p(

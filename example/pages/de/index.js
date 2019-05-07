@@ -7,10 +7,7 @@ const page = () => [
     ' LanguageSwitch modul. Es rendert ein Menu mit Sprachauswahl.',
   ]),
 
-  GitBadges({
-    project: 'magic-modules/languageswitch',
-    appveyor: 'jaeh/languageswitch',
-  }),
+  GitBadges('magic-modules/language-switch'),
 
   h2({ id: 'installation' }, 'installation:'),
   p([
