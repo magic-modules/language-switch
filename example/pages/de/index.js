@@ -1,6 +1,6 @@
 const page = () => [
   LanguageSwitch,
-  h1('@magic-modules/languageswitch'),
+  h1('@magic-modules/language-switch'),
   p([
     'dies ist das ',
     Link({ to: 'https://github.com/magic-modules' }, '@magic-modules'),
@@ -10,24 +10,8 @@ const page = () => [
   GitBadges('magic-modules/language-switch'),
 
   h2({ id: 'installation' }, 'installation:'),
-  p([
-    'installation funktioniert durch npm.',
-    'in naher zukunft leben alle magic module auf github und nicht npm.',
-  ]),
-  p('das fehlende @ vor magic-modules ist, wie wir npm module von github installieren können.'),
+  Pre('npm install magic-modules/language-switch'),
 
-  Pre(`
-npm install magic-modules/languageswitch
-`),
-
-  h2({ id: 'require' }, 'importieren'),
-  p('zuerst laden wir das modul via /assets/index.js'),
-  Pre(`
-// assets/index.js
-module.exports = {
-  //...other exports
-  LanguageSwitch: require('@magic-modules/languageswitch'),
-}`),
   h2({ id: 'usage' }, 'usage:'),
   p('in einer page oder einem komponent'),
   Pre("module.exports = {\n  View: () => div({ class: 'page' }, LanguageSwitch)\n}"),
@@ -36,7 +20,7 @@ module.exports = {
   p([
     'der source dieser page ist im ',
     Link(
-      { to: 'https://github.com/magic-modules/languageswitch/tree/master/example' },
+      { to: 'https://github.com/magic-modules/language-switch/tree/master/example' },
       'example directory',
     ),
     ' und wird mit ',

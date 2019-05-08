@@ -1,6 +1,6 @@
 module.exports = () => [
   LanguageSwitch,
-  h1('@magic-modules/languageswitch'),
+  h1('@magic-modules/language-switch'),
   p([
     'this is the ',
     Link({ to: 'https://github.com/magic-modules' }, '@magic-modules'),
@@ -10,18 +10,10 @@ module.exports = () => [
   GitBadges('magic-modules/language-switch'),
 
   h2({ id: 'installation' }, 'installation:'),
-  p(
-    'installation is done using npm. for now, all magic modules are living on github and not on npm.',
-  ),
-  p('note the missing @ before magic-modules.'),
-  p('this is how we install npm modules from github.'),
-
-  Pre(`
-npm install magic-modules/languageswitch
-`),
+  Pre('npm install magic-modules/language-switch'),
 
   h2({ id: 'usage' }, 'usage:'),
-  p('in a page or component'),
+  p('in a page or module View'),
   Pre('module.exports = {\n  View: () => LanguageSwitch,\n}'),
 
   h2({ id: 'pages' }, 'language pages'),
@@ -55,7 +47,7 @@ module.exports = {
   p([
     'the source for this page is in the ',
     Link(
-      { to: 'https://github.com/magic-modules/languageswitch/tree/master/example' },
+      { to: 'https://github.com/magic-modules/language-switch/tree/master/example' },
       'example directory',
     ),
     ' and gets built and published to github using ',

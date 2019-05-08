@@ -1,4 +1,4 @@
-## @magic-modules/languageswitch
+## @magic-modules/language-switch
 this is the [@magic-modules](https://github.com/magic-modules/)
 LanguageSwitch component. It provides a dynamic language switch menu
 
@@ -7,7 +7,7 @@ but **assumes that there are alternatives for every language.**
 
 it also handles hashes # in urls correctly.
 
-[html docs](https://magic-modules.github.io/languageswitch/)
+[html docs](https://magic-modules.github.io/language-switch/)
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
@@ -16,27 +16,27 @@ it also handles hashes # in urls correctly.
 [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
-[npm-image]: https://img.shields.io/npm/v/@magic-modules/languageswitch.svg
-[npm-url]: https://www.npmjs.com/package/@magic-modules/languageswitch
-[travis-image]: https://api.travis-ci.org/magic-modules/languageswitch.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-modules/languageswitch
+[npm-image]: https://img.shields.io/npm/v/@magic-modules/language-switch.svg
+[npm-url]: https://www.npmjs.com/package/@magic-modules/language-switch
+[travis-image]: https://api.travis-ci.org/magic-modules/language-switch.svg?branch=master
+[travis-url]: https://travis-ci.org/magic-modules/language-switch
 [appveyor-image]: https://img.shields.io/appveyor/ci/magicmodules/language-switch/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magicmodules/language-switch/branch/master
-[coveralls-image]: https://coveralls.io/repos/github/magic-modules/languageswitch/badge.svg
-[coveralls-url]: https://coveralls.io/github/magic-modules/languageswitch
-[greenkeeper-image]: https://badges.greenkeeper.io/magic-modules/languageswitch.svg
-[greenkeeper-url]: https://badges.greenkeeper.io/magic-modules/languageswitch.svg
-[snyk-image]: https://snyk.io/test/github/magic-modules/languageswitch/badge.svg
-[snyk-url]: https://snyk.io/test/github/magic-modules/languageswitch
+[coveralls-image]: https://coveralls.io/repos/github/magic-modules/language-switch/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-modules/language-switch
+[greenkeeper-image]: https://badges.greenkeeper.io/magic-modules/language-switch.svg
+[greenkeeper-url]: https://badges.greenkeeper.io/magic-modules/language-switch.svg
+[snyk-image]: https://snyk.io/test/github/magic-modules/language-switch/badge.svg
+[snyk-url]: https://snyk.io/test/github/magic-modules/language-switch
 
 #### install:
 ```bash
-npm install --save-exact @magic-modules/languageswitch
+npm install --save-exact @magic-modules/language-switch
 ```
 
 #### usage:
 ```javascript
-// in any component view
+// in any component View
 const component = {
   View: () => div([LanguageSwitch]),
 }
