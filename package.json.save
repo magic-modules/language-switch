@@ -27,10 +27,10 @@
   },
   "devDependencies": {
     "@magic-modules/git-badges": "github:magic-modules/git-badges",
-    "@magic-modules/pre": "github:magic-modules/pre",
+x    "@magic-modules/pre": "github:magic-modules/pre",
     "@magic-themes/docs": "github:magic-themes/docs",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.1.1"
+    "@magic/test": "0.0.12"
   },
   "keywords": [
     "magic",
