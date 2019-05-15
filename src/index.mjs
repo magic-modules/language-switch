@@ -67,4 +67,3 @@ export const propTypes = [
   { key: 'hash', type: 'string' },
   { key: 'root', type: 'string' },
 ]
-
