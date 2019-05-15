@@ -1,6 +1,6 @@
-const LanguageSwitch = () => (state, actions) => {
+export const View = () => (state, actions) => {
   let { languages = [], url, hash, root } = state
-  CHECK_PROPS({ languages, url, hash, root }, LanguageSwitch.props, 'LanguageSwitch')
+  CHECK_PROPS({ languages, url, hash, root }, propTypes, 'LanguageSwitch')
   // no languages, no menu
   if (!languages.length || !root || !url) {
     return
@@ -34,15 +34,15 @@ const LanguageSwitch = () => (state, actions) => {
   )
 }
 
-LanguageSwitch.state = {
+export const state = {
   language: '',
 }
 
-LanguageSwitch.actions = {
+export const actions = {
   changeLanguage: language => ({ language }),
 }
 
-LanguageSwitch.style = {
+export const style = {
   '.LanguageSwitch': {
     position: 'fixed',
     top: '0.5em',
@@ -52,7 +52,7 @@ LanguageSwitch.style = {
   },
 }
 
-LanguageSwitch.global = {
+export const global = {
   state: {
     language: true,
   },
@@ -61,11 +61,10 @@ LanguageSwitch.global = {
   },
 }
 
-LanguageSwitch.props = [
+export const propTypes = [
   { key: 'languages', type: 'array', required: true },
   { key: 'url', type: 'string', required: true },
   { key: 'hash', type: 'string' },
   { key: 'root', type: 'string' },
 ]
 
-module.exports = LanguageSwitch
