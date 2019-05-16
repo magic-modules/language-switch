@@ -1,6 +1,6 @@
-export const View = () => (state, actions) => {
-  let { languages = [], url, hash, root } = state
-  CHECK_PROPS({ languages, url, hash, root }, propTypes, 'LanguageSwitch')
+export const View = (props = {}) => {
+  let { languages = [], url, hash, root } = props
+  CHECK_PROPS(props, propTypes, 'LanguageSwitch')
   // no languages, no menu
   if (!languages.length || !root || !url) {
     return
@@ -10,10 +10,10 @@ export const View = () => (state, actions) => {
 
   const urlArr = url.split('/').filter(a => a)
   const urlLang = urlArr[0]
-  const lang = languages.find(l => l.code === urlLang) || languages[0] || { code: state.language }
+  const lang = languages.find(l => l.code === urlLang) || languages[0] || { code: props.language }
   const language = lang.code
 
-  if (language && language !== state.language) {
+  if (language && language !== props.language) {
     actions.changeLanguage(language)
   }
 
