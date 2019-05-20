@@ -1,5 +1,9 @@
-const page = () => [
-  LanguageSwitch,
+export const state = {
+  lang: 'de',
+}
+
+export const View = state => [
+  LanguageSwitch(state),
   h1('@magic-modules/language-switch'),
   p([
     'dies ist das ',
@@ -14,7 +18,7 @@ const page = () => [
 
   h2({ id: 'usage' }, 'usage:'),
   p('in einer page oder einem komponent'),
-  Pre("module.exports = {\n  View: () => div({ class: 'page' }, LanguageSwitch)\n}"),
+  Pre("export const View = state => div({ class: 'page' }, LanguageSwitch(state))"),
 
   h2({ id: 'source' }, 'source'),
   p([
@@ -28,9 +32,3 @@ const page = () => [
     ' gebaut und zu github publiziert.',
   ]),
 ]
-
-page.state = {
-  lang: 'de',
-}
-
-module.exports = page

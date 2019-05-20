@@ -1,5 +1,5 @@
-module.exports = () => [
-  LanguageSwitch,
+export const View = state => [
+  LanguageSwitch(state),
   h1('@magic-modules/language-switch'),
   p([
     'this is the ',
@@ -14,30 +14,28 @@ module.exports = () => [
 
   h2({ id: 'usage' }, 'usage:'),
   p('in a page or module View'),
-  Pre('module.exports = {\n  View: () => LanguageSwitch,\n}'),
+  Pre("export const View = state => div({ class: 'page' }, LanguageSwitch(state))"),
 
   h2({ id: 'pages' }, 'language pages'),
   p('create your languages in the pages directory, for example:'),
   Pre(`
 /pages/
-  index.js // english page
+  index.mjs // english page
   /de/
-    index.js // german page
+    index.mjs // german page
 `),
 
   h2({ id: 'state' }, 'required state'),
   p('LanguageSwitch needs to know about the languages in your app.'),
   Pre(`
-// /assets/app.js
-module.exports = {
-  state: {
-    // ... other app state
-    languages: [
-      // the first language is the default fallback
-      { code: 'en', to: '/', text: 'english' },
-      { code: 'de', to: '/de/', text: 'deutsch' },
-    ],
-  },
+// /assets/app.mjs
+export const state = {
+  // ... other app state
+  languages: [
+    // the first language is the default fallback
+    { code: 'en', to: '/', text: 'english' },
+    { code: 'de', to: '/de/', text: 'deutsch' },
+  ],
 }
 `),
 

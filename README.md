@@ -3,9 +3,7 @@ this is the [@magic-modules](https://github.com/magic-modules/)
 LanguageSwitch component. It provides a dynamic language switch menu
 
 it redirects your current page to any of the other language versions that exist,
-but **assumes that there are alternatives for every language.**
-
-it also handles hashes # in urls correctly.
+but also **assumes that there are alternatives for every language.**
 
 [html docs](https://magic-modules.github.io/language-switch/)
 
@@ -37,8 +35,7 @@ npm install --save-exact @magic-modules/language-switch
 #### usage:
 ```javascript
 // in any component View
-const component = {
-  View: () => div([LanguageSwitch]),
+export const View = state => div({ class: 'page' }, LanguageSwitch(state)),
 }
 ```
 
@@ -56,15 +53,13 @@ create your languages in the pages directory, for example:
 LanguageSwitch needs to know about the languages in your app.
 ```javascript
 // /assets/app.js
-module.exports = {
-  state: {
-    // ... other app state
-    languages: [
-      // the first language is the default fallback
-      { code: 'en', to: '/', text: 'english' },
-      { code: 'de', to: '/de/', text: 'deutsch' },
-    ],
-  },
+export const state = {
+  // ... other app state
+  languages: [
+    // the first language is the default fallback
+    { code: 'en', to: '/', text: 'english' },
+    { code: 'de', to: '/de/', text: 'deutsch' },
+  ],
 }
 ```
 
