@@ -61,9 +61,11 @@ export const global = {
   },
 }
 
-export const propTypes = [
-  { key: 'languages', type: 'array', required: true },
-  { key: 'url', type: 'string', required: true },
-  { key: 'hash', type: 'string' },
-  { key: 'root', type: 'string' },
-]
+export const propTypes = {
+  LanguageSwitch: [
+    { key: 'languages', type: 'array', required: true },
+    { key: 'url', type: 'string', required: true },
+    { key: 'hash', type: 'string' },
+    { key: 'root', type: 'string' },
+  ],
+}
