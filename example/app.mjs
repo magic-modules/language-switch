@@ -17,3 +17,10 @@ export const state = {
     { to: '/#source', text: 'source' },
   ],
 }
+
+export const style = {
+  '.LightSwitch': {
+    bottom: '0.5em',
+    top: 'auto',
+  },
+}

@@ -31,4 +31,6 @@ export const View = state => [
     Link({ to: 'https://github.com/magic/core' }, '@magic/core'),
     ' gebaut und zu github publiziert.',
   ]),
+
+  LightSwitch(state),
 ]
