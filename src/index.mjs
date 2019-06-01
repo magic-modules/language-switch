@@ -14,7 +14,7 @@ export const View = (props = {}) => {
   const language = lang.code
 
   if (language && language !== props.language) {
-    actions.changeLanguage(language)
+    actions.changeLanguage(props, language)
   }
 
   return ul(
@@ -29,7 +29,7 @@ export const View = (props = {}) => {
       const h = hash ? `#${hash}` : ''
       to = (root + to + url + h).replace(/\/\/+/g, '/')
 
-      return li([Link({ to, onclick: () => actions.changeLanguage(code) }, text)])
+      return li([Link({ to, onclick: [actions.changeLanguage, code] }, text)])
     }),
   )
 }
@@ -39,7 +39,7 @@ export const state = {
 }
 
 export const actions = {
-  changeLanguage: language => ({ language }),
+  changeLanguage: (state, language) => ({ ...state, language }),
 }
 
 export const style = {
