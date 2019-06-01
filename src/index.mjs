@@ -27,7 +27,7 @@ export const View = (props = {}) => {
       url = url.replace(`/${language}/`, '/')
 
       const h = hash ? `#${hash}` : ''
-      to = (to + url + h).replace(/\/\/+/g, '/')
+      to = (root + to + url + h).replace(/\/\/+/g, '/')
 
       return li([Link({ to, onclick: () => actions.changeLanguage(code) }, text)])
     }),
