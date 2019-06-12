@@ -46,7 +46,7 @@ export const style = {
   '.LanguageSwitch': {
     position: 'fixed',
     top: '0.5em',
-    right: '0.5em',
+    right: '1.5em',
     left: 'auto',
     fontSize: '0.8em',
   },

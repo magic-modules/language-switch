@@ -1,10 +1,10 @@
 {
-  "css": "sha384-tbFc98Tk61YXIgDy5hv5cbIGDsySe9jBBtPVyY2MvFZR3KyGq94NYP8NyWulRAwv",
+  "css": "sha384-UC+bX1Gt/hWe2wHeb6MrWsYE+MeRYwMsS/d4jvL7EIDeTSULfVVzqHQojP0JU3nH",
   "js": "sha384-tg3ELqVqSD7HsxHTjsAlTt5WPra6hIBRkQFo/7d++qbg1cXNS1LOTp6ricLzX+ov",
   "pages": {
-    "/language-switch/": "sha384-ozm6le+1qFNbQU5S/BwLZG51iUdY7AMTfxtZiKycH7tTfBuR0p3xB/3AkPpd+/c4",
-    "/language-switch/404/": "sha384-S03RmOrZD7/ji+le1g8hapnU2nH0FuVE5K5EY4ivXDjlFgDVQd4olOOpnn/BSzi9",
-    "/language-switch/de/": "sha384-VdbOc6i+eertJdFlgoXgPottqpUL0NbHW5lq0lRWk5vQNVA3WAl1Z7fZl5Ra9UaD"
+    "/language-switch/": "sha384-/m5KjIl7kpuOKjMStEKVjerNXUT2LQuHlpOx4/14Ndu2Aq71H/LO/QME9nuIzDs8",
+    "/language-switch/404/": "sha384-fiYyIFliJqJWmPR7BzwraJT5AguQ9bfMZGVpv3njz6uq9KQpHzvZ91pKxFNCXCqM",
+    "/language-switch/de/": "sha384-mBzSm/AJkAY/gwu8CmXmjnw/rKnyQgTRrAgl9qK+DFxKufw+IjMDk+VvEfcfTJUj"
   },
   "static": {
     "/favicon.ico": "sha384-pf51ay6pZCj3+XlVCPmCKLDFpLj7QP+2heR+/n08WgS7Bve7JMkgubHOkwLzaTr+",
