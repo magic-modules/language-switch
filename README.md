@@ -16,8 +16,8 @@ but also **assumes that there are alternatives for every language.**
 
 [npm-image]: https://img.shields.io/npm/v/@magic-modules/language-switch.svg
 [npm-url]: https://www.npmjs.com/package/@magic-modules/language-switch
-[travis-image]: https://api.travis-ci.org/magic-modules/language-switch.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-modules/language-switch
+[travis-image]: https://img.shields.io/travis/com/magic-modules/language-switch/master
+[travis-url]: https://travis-ci.com/magic-modules/language-switch
 [appveyor-image]: https://img.shields.io/appveyor/ci/magicmodules/language-switch/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magicmodules/language-switch/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-modules/language-switch/badge.svg
