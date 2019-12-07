@@ -64,3 +64,8 @@ export const state = {
 ```
 
 thats it, your magic app now knows about your languages
+
+#### changelog
+
+##### 0.0.1
+first release
