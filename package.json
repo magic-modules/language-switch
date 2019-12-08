@@ -41,7 +41,9 @@
   },
   "keywords": [
     "magic",
-    "language"
+    "i18n",
+    "magic-modules",
+    "hyperapp"
   ],
   "contributors": [
     {
