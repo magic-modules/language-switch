@@ -69,3 +69,9 @@ thats it, your magic app now knows about your languages
 
 ##### 0.0.1
 first release
+
+##### 0.0.2 - unreleased
+require node 13.5.0
+
+##### 0.0.3 - unreleased
+...
