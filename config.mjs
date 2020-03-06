@@ -4,5 +4,5 @@ export default {
   URL: 'magic-modules.github.io/language-switch',
   PUBLIC: 'docs',
   THEME: 'docs',
-  HOIST: ['LightSwitch', 'Gdpr'],
+  HOIST: ['LightSwitch', 'Gdpr', 'LanguageSwitch'],
 }
