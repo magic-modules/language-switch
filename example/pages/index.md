@@ -21,6 +21,12 @@ export default {
 }
 ```
 
+### caveat
+
+please note that this module will not change anything about the menu.
+
+i built it to use it on my page [jaeh.at](https://jaeh.at), which does not have a menu.
+
 ## pages
 
 create your languages in the pages directory, for example:

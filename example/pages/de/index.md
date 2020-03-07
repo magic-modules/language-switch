@@ -19,7 +19,7 @@ LanguageSwitch modul. Es rendert ein Menu mit Sprachauswahl.
 
 ## #usage verwendung
 
-hoist in config.mjs:
+hoisten in config.mjs:
 
 ```
 // /src/config.mjs
@@ -27,6 +27,13 @@ export default {
   HOIST: ['LanguageSwitch'],
 }
 ```
+
+### caveat
+
+bitte beachte, dass dieses modul nicht das menu veraendert.
+
+ich habe es gebaut, um es auf meiner seite zu verwenden: [jaeh.at](https://jaeh.at),
+und die hat kein menu.
 
 ## #pages seiten
 
