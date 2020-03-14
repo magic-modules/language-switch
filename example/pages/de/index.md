@@ -11,7 +11,7 @@ dies ist das
 [@magic-modules](https://github.com/magic-modules)
 LanguageSwitch modul. Es rendert ein Menu mit Sprachauswahl.
 
-<GitBadges>magic-modules/language-switch</GitBadges>
+<GitBadges>@magic-modules/language-switch</GitBadges>
 
 ## installation
 

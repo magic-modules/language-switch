@@ -4,7 +4,7 @@ this is the
 [@magic-modules](https://github.com/magic-modules)
 LanguageSwitch component. It provides a language switch menu.
 
-<GitBadges>magic-modules/language-switch</GitBadges>
+<GitBadges>@magic-modules/language-switch</GitBadges>
 
 ## installation
 
