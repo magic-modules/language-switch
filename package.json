@@ -6,7 +6,7 @@
   "homepage": "https://github.com/magic-modules/language-switch#readme",
   "license": "AGPL-3.0",
   "engines": {
-    "node": ">=13.5.0"
+    "node": ">=14.2.0"
   },
   "engineStrict": true,
   "scripts": {
