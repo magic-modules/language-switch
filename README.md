@@ -76,5 +76,8 @@ bump required node version to 14.2.0
 ##### 0.0.3
 bump required node version to 14.15.4
 
-##### 0.0.4 - unreleased
+##### 0.0.4
+do not use root to build language link to value
+
+##### 0.0.5 - unreleased
 ...
