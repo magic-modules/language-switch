@@ -1,6 +1,7 @@
 export const View = (props = {}) => {
   let { languages = [], url, hash, root } = props
   CHECK_PROPS(props, propTypes, 'LanguageSwitch')
+
   // no languages, no menu
   if (!languages.length || !root || !url) {
     return
@@ -27,7 +28,7 @@ export const View = (props = {}) => {
       url = url.replace(`/${language}/`, '/')
 
       const h = hash ? `#${hash}` : ''
-      to = (root + to + url + h).replace(/\/\/+/g, '/')
+      to = (to + url + h).replace(/\/\/+/g, '/')
 
       return li([Link({ to, onclick: [actions.changeLanguage, code] }, text)])
     }),
