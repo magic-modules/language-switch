@@ -80,8 +80,10 @@ bump required node version to 14.15.4
 do not use root to build language link to value
 
 ##### 0.0.5
-* update dependencies
 * allow multiple languages to be shown correctly
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+update dependencies
+
+##### 0.0.7 - unreleased
 ...
