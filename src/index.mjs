@@ -1,6 +1,7 @@
 export const View = (props = {}) => {
-  let { languages = [], url, hash, root } = props
   CHECK_PROPS(props, propTypes, 'LanguageSwitch')
+
+  let { languages = [], url, hash, root, sep = '', showActive = false } = props
 
   // no languages, no menu
   if (!languages.length || !root || !url) {
@@ -20,18 +21,27 @@ export const View = (props = {}) => {
 
   return ul(
     { class: 'LanguageSwitch' },
-    languages.map(({ to = '', text, code }) => {
-      if (code === language) {
-        return
-      }
+    languages
+      .filter(({ code }) => showActive || code !== language)
+      .map(({ to = '', text, code }, i) => {
+        url = url.replace(`/${language}/`, '/')
 
-      url = url.replace(`/${language}/`, '/')
+        const h = hash ? `#${hash}` : ''
+        to = (to + url + h).replace(/\/\/+/g, '/')
 
-      const h = hash ? `#${hash}` : ''
-      to = (to + url + h).replace(/\/\/+/g, '/')
+        // i + 2 because one language will always be invisible
+        let iModifier = i + 1
+        if (!showActive) {
+          iModifier = i + 2
+        }
 
-      return li([Link({ to, onclick: [actions.changeLanguage, code] }, text)])
-    }),
+        const showSep = sep && iModifier < languages.length
+
+        return [
+          li([Link({ to, onclick: [actions.changeLanguage, code] }, text)]),
+          showSep ? li(sep) : '',
+        ]
+      }),
   )
 }
 
